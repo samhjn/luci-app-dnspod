@@ -10,5 +10,5 @@ LuCI - Lua Configuration Interface
 module("luci.controller.dnspod", package.seeall)
 
 function index()
-        entry({"admin", "network", "dnspod"}, cbi("dnspod"), _("动态DNSPOD"), 59)
+        entry({"admin", "services", "dnspod"}, cbi("dnspod"), _("DNSPOD DDNS"), 59)
 end

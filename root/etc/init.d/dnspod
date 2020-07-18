@@ -65,6 +65,6 @@ stop()
 		kill $(ps -w | grep ddnspod |grep -v grep) >/dev/null 2>&1
 		cat /dev/null > /var/log/ddnspod1.log
 		cat /dev/null > /usr/share/dnspod/dns.conf
-		cat /dev/null > /var/log/ddnspod.log && echo "$(date "+%Y-%m-%d %H:%M:%S") >>>>>>>>停止运行:DNS记录以保存<<<<<<<<" >> ${logfile}
+		cat /dev/null > /var/log/ddnspod.log && echo "$(date "+%Y-%m-%d %H:%M:%S") >>>>>>>>停止运行:DNS记录已保存<<<<<<<<" >> ${logfile}
 	fi
 }
